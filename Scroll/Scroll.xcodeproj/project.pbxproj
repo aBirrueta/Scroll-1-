@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		81354E572F4784D900CD9AAF /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 81354E562F4784D900CD9AAF /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8134F54F2F4636B900C16F0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81354E572F4784D900CD9AAF /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Scroll;
 			packageProductDependencies = (
+				81354E562F4784D900CD9AAF /* Supabase */,
 			);
 			productName = Scroll;
 			productReference = 8134F5412F4636B800C16F0E /* Scroll.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 8134F5382F4636B700C16F0E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				81354E552F4784D900CD9AAF /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8134F5422F4636B800C16F0E /* Products */;
 			projectDirPath = "";
@@ -578,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81354E552F4784D900CD9AAF /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81354E562F4784D900CD9AAF /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81354E552F4784D900CD9AAF /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8134F5392F4636B800C16F0E /* Project object */;
 }
