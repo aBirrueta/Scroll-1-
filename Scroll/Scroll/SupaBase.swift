@@ -9,5 +9,10 @@ import Foundation
 import Supabase
 let supabase = SupabaseClient(
   supabaseURL: URL(string: "https://rmyzqiwdtmtpnvizbqwi.supabase.co")!,
-  supabaseKey: "sb_publishable_LSYhdMx2KJXSyt5dXIAcJg_JfNW3OGi"
+  supabaseKey: "sb_publishable_LSYhdMx2KJXSyt5dXIAcJg_JfNW3OGi",
+  options: SupabaseClientOptions(
+    auth: SupabaseClientOptions.AuthOptions(
+      emitLocalSessionAsInitialSession: true
+    )
+  )
 )
