@@ -42,6 +42,7 @@ struct AuthView: View {
           }
         }
       }
+
     }
     .onOpenURL(perform: { url in
       Task {

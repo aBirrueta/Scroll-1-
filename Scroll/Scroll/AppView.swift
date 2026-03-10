@@ -16,7 +16,23 @@ struct AppView: View {
       if isAuthenticated {
         ProfileView()
       } else {
-        AuthView()
+          ProfileView()
+          TabView {
+                  FeedView()
+                      .tabItem {
+                          Label("Feed", systemImage: "house.fill")
+                      }
+                  
+                  FriendsView()
+                      .tabItem {
+                          Label("Friends", systemImage: "person.2.fill")
+                      }
+                  
+                  ProfileView()
+                      .tabItem {
+                          Label("Profile", systemImage: "person.fill")
+                      }
+        //AuthView()
       }
     }
     .task {
