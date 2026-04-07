@@ -29,7 +29,7 @@ struct AppView: View {
                     
                     ProfileView()
                         .tabItem {
-                            Label("Profile!!", systemImage: "person.fill")
+                            Label("Profile", systemImage: "person.fill")
                         }
                     
                     AuthView()
