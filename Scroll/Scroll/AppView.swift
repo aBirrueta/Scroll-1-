@@ -9,38 +9,41 @@ import SwiftUI
 import Supabase
 
 struct AppView: View {
-  @State var isAuthenticated = false
-
-  var body: some View {
-    Group {
-      if isAuthenticated {
-        ProfileView()
-      } else {
-          ProfileView()
-          TabView {
-                  FeedView()
-                      .tabItem {
-                          Label("Feed", systemImage: "house.fill")
-                      }
-                  
-                  FriendsView()
-                      .tabItem {
-                          Label("Friends", systemImage: "person.2.fill")
-                      }
-                  
-                  ProfileView()
-                      .tabItem {
-                          Label("Profile", systemImage: "person.fill")
-                      }
-        //AuthView()
-      }
-    }
-    .task {
-      for await state in supabase.auth.authStateChanges {
-        if [.initialSession, .signedIn, .signedOut].contains(state.event) {
-          isAuthenticated = state.session != nil
+    @State var isAuthenticated = false
+    
+    var body: some View {
+        Group {
+            if isAuthenticated {
+                ProfileView()
+            } else {
+                TabView {
+                    FeedView()
+                        .tabItem {
+                            Label("Feed", systemImage: "house.fill")
+                        }
+                    
+                    NotificationView()
+                        .tabItem {
+                            Label("Notifications", systemImage: "bell.fill")
+                        }
+                    
+                    ProfileView()
+                        .tabItem {
+                            Label("Profile!!", systemImage: "person.fill")
+                        }
+                    
+                    AuthView()
+                }
+            }
         }
-      }
+                .task {
+                    for await state in supabase.auth.authStateChanges {
+                        if [.initialSession, .signedIn, .signedOut].contains(state.event) {
+                            isAuthenticated = state.session != nil
+                        }
+                    }
+                }
+        }
     }
-  }
-}
+    
+

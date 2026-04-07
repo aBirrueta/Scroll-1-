@@ -52,10 +52,7 @@ struct ProfileView: View {
             .textInputAutocapitalization(.never)
           TextField("Full name", text: $fullName)
             .textContentType(.name)
-          TextField("Website", text: $website)
-            .textContentType(.URL)
-            .textInputAutocapitalization(.never)
-        }
+            }
 
         Section {
           Button("Update profile") {
