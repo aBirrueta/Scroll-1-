@@ -133,6 +133,7 @@ struct ProfileCreationView: View {
           .update(updatedProfile)
           .eq("id", value: currentUser.id)
           .execute()
+        
       } catch {
         debugPrint(error)
       }

@@ -5,7 +5,6 @@
 //  Created by Alejandro Birrueta on 2/20/26.
 //
 
-import PhotosUI
 import Storage
 import Supabase
 import SwiftUI
@@ -15,10 +14,7 @@ struct ProfileView: View {
   @State var fullName = ""
   @State var website = ""
 
-  @State var isLoading = false
-
- @State var imageSelection: PhotosPickerItem?
- @State var avatarImage: AvatarImage?
+  @State var avatarImage: AvatarImage?
 
   var body: some View {
     NavigationStack {
@@ -34,35 +30,17 @@ struct ProfileView: View {
             }
             .scaledToFit()
             .frame(width: 80, height: 80)
-
+            
             Spacer()
-
-            PhotosPicker(selection: $imageSelection, matching: .images) {
-              Image(systemName: "pencil.circle.fill")
-                .symbolRenderingMode(.multicolor)
-                .font(.system(size: 30))
-                .foregroundColor(.accentColor)
-            }
           }
         }
-
+        
         Section {
           TextField("Username", text: $username)
             .textContentType(.username)
             .textInputAutocapitalization(.never)
           TextField("Full name", text: $fullName)
             .textContentType(.name)
-            }
-
-        Section {
-          Button("Update profile") {
-            updateProfileButtonTapped()
-          }
-          .bold()
-
-          if isLoading {
-            ProgressView()
-          }
         }
       }
       .navigationTitle("Profile")
@@ -75,13 +53,9 @@ struct ProfileView: View {
           }
         }
       })
-      .onChange(of: imageSelection) { _, newValue in
-        guard let newValue else { return }
-        loadTransferable(from: newValue)
+      .task {
+        await getInitialProfile()
       }
-    }
-    .task {
-      await getInitialProfile()
     }
   }
 
@@ -111,61 +85,8 @@ struct ProfileView: View {
     }
   }
 
-  func updateProfileButtonTapped() {
-    Task {
-      isLoading = true
-      defer { isLoading = false }
-      do {
-        let imageURL = try await uploadImage()
-
-        let currentUser = try await supabase.auth.session.user
-
-        let updatedProfile = Profile(
-          username: username,
-          fullName: fullName,
-          website: website,
-          avatarURL: imageURL
-        )
-
-        try await supabase
-          .from("profiles")
-          .update(updatedProfile)
-          .eq("id", value: currentUser.id)
-          .execute()
-      } catch {
-        debugPrint(error)
-      }
-    }
-  }
-
-  private func loadTransferable(from imageSelection: PhotosPickerItem) {
-    Task {
-      do {
-        avatarImage = try await imageSelection.loadTransferable(type: AvatarImage.self)
-      } catch {
-        debugPrint(error)
-      }
-    }
-  }
-
   private func downloadImage(path: String) async throws {
     let data = try await supabase.storage.from("avatars").download(path: path)
     avatarImage = AvatarImage(data: data)
-  }
-
-  private func uploadImage() async throws -> String? {
-    guard let data = avatarImage?.data else { return nil }
-
-    let filePath = "\(UUID().uuidString).jpeg"
-
-    try await supabase.storage
-      .from("avatars")
-      .upload(
-        filePath,
-        data: data,
-        options: FileOptions(contentType: "image/jpeg")
-      )
-
-    return filePath
   }
 }
