@@ -18,8 +18,10 @@ struct ProfileCreationView: View {
 
   @State var isLoading = false
 
- @State var imageSelection: PhotosPickerItem?
- @State var avatarImage: AvatarImage?
+  @State var imageSelection: PhotosPickerItem?
+  @State var avatarImage: AvatarImage?
+  
+  var onProfileCreated: () -> Void
 
   var body: some View {
     NavigationStack {
@@ -133,6 +135,8 @@ struct ProfileCreationView: View {
           .update(updatedProfile)
           .eq("id", value: currentUser.id)
           .execute()
+        
+        onProfileCreated()
         
       } catch {
         debugPrint(error)
