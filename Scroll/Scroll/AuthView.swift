@@ -23,7 +23,7 @@ struct AuthView: View {
       }
 
       Section {
-        Button("Sign in") {
+        Button("Sign up") {
           signInButtonTapped()
         }
 
@@ -31,6 +31,10 @@ struct AuthView: View {
           ProgressView()
         }
       }
+        Button("Log in") {
+            LogInView()
+        }
+
 
       if let result {
         Section {
