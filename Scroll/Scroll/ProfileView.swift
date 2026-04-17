@@ -12,7 +12,6 @@ import SwiftUI
 struct ProfileView: View {
   @State var username = ""
   @State var fullName = ""
-  @State var website = ""
 
   @State var avatarImage: AvatarImage?
 
@@ -74,8 +73,6 @@ struct ProfileView: View {
 
       username = profile.username ?? ""
       fullName = profile.fullName ?? ""
-      website = profile.website ?? ""
-
       if let avatarURL = profile.avatarURL, !avatarURL.isEmpty {
         try await downloadImage(path: avatarURL)
       }

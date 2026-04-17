@@ -14,8 +14,6 @@ import SwiftUI
 struct ProfileCreationView: View {
   @State var username = ""
   @State var fullName = ""
-  @State var website = ""
-
   @State var isLoading = false
 
   @State var imageSelection: PhotosPickerItem?
@@ -103,7 +101,6 @@ struct ProfileCreationView: View {
 
       username = profile.username ?? ""
       fullName = profile.fullName ?? ""
-      website = profile.website ?? ""
 
       if let avatarURL = profile.avatarURL, !avatarURL.isEmpty {
         try await downloadImage(path: avatarURL)
@@ -126,7 +123,6 @@ struct ProfileCreationView: View {
         let updatedProfile = Profile(
           username: username,
           fullName: fullName,
-          website: website,
           avatarURL: imageURL
         )
 
