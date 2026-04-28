@@ -11,24 +11,47 @@ import Supabase
 import SwiftUI
 
 struct LogInView: View {
-    @State var username = ""
+    @State var email = ""
     @State var password: String = ""
     
     var body: some View {
         VStack(spacing: 8){
-            TextField("Username", text: $username)
-                .textContentType(.username)
-                .textInputAutocapitalization(.never)
+            Spacer()
+            TextField("Enter your email", text: $email)
+                .autocapitalization(.none)
+                .font(.subheadline)
+                .padding(12)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                .padding(.horizontal,
+                         24)
+            
             SecureField("Enter your password", text: $password)
                 .font(.subheadline)
                 .padding(12)
+                .background (Color(.systemGray6))
                 .cornerRadius(10)
-                .padding(.horizontal, 24)
-            
-            Divider()
+                .padding(.horizontal)
+            Spacer()
+        }
+        
+        Button { } label: {
+            Text( "Login")
+                .frame(width: 360, height: 48) .font(.headline)
+                .background(.blue)
+                .cornerRadius (8)
+                .foregroundStyle(.white)
+        }
+        .padding(.vertical)
+        
+        
+        Spacer ()
+        
+        Divider ()
+        
             
             NavigationLink{
-                ProfileCreationView()
+                ProfileCreationView(onProfileCreated: {})
                     .navigationBarBackButtonHidden()
             } label: {
                 HStack(spacing: 3){
@@ -41,7 +64,8 @@ struct LogInView: View {
             }
         }
     }
-}
+    
+
     #Preview {
         LogInView()
     }

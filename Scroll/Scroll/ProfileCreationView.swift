@@ -12,48 +12,42 @@ import Supabase
 import SwiftUI
 
 struct ProfileCreationView: View {
-  @State var username = ""
-  @State var fullName = ""
-  @State var isLoading = false
-
-  @State var imageSelection: PhotosPickerItem?
-  @State var avatarImage: AvatarImage?
-  
+    @Environment(\.dismiss) private var dismiss
+    @State private var email = ""
+    @State private var username = ""
+    @State private var password = ""
+    @State private var confirmedPassword = ""
+    @State private var passwordsMatch = false
   var onProfileCreated: () -> Void
 
   var body: some View {
-    NavigationStack {
-      Form {
-        Section {
-          HStack {
-            Group {
-              if let avatarImage {
-                avatarImage.image.resizable()
-              } else {
-                Color.clear
-              }
-            }
-            .scaledToFit()
-            .frame(width: 80, height: 80)
-
-            Spacer()
-
-            PhotosPicker(selection: $imageSelection, matching: .images) {
-              Image(systemName: "pencil.circle.fill")
-                .symbolRenderingMode(.multicolor)
-                .font(.system(size: 30))
-                .foregroundColor(.accentColor)
-            }
-          }
-        }
-
-        Section {
-          TextField("Username", text: $username)
-            .textContentType(.username)
-            .textInputAutocapitalization(.never)
-          TextField("Full name", text: $fullName)
-            .textContentType(.name)
-            }
+      VStack(spacing: 8){
+          Spacer()
+          TextField("Enter your email", text: $email)
+              .autocapitalization(.none)
+              .font(.subheadline)
+              .padding(12)
+              .background(Color(.systemGray6))
+              .cornerRadius(10)
+              .padding(.horizontal,
+                       24)
+          TextField("Enter your username", text: $username)
+              .autocapitalization(.none)
+              .font(.subheadline)
+              .padding(12)
+              .background(Color(.systemGray6))
+              .cornerRadius(10)
+              .padding(.horizontal,
+                       24)
+          
+          SecureField("Enter your password", text: $password)
+              .font(.subheadline)
+              .padding(12)
+              .background (Color(.systemGray6))
+              .cornerRadius(10)
+              .padding(.horizontal)
+          Spacer()
+      }
 
         Section {
           Button("Create profile") {
