@@ -6,12 +6,10 @@
 //
 
 
-import PhotosUI
-import Storage
-import Supabase
 import SwiftUI
 
 struct ProfileCreationView: View {
+    @Environment(AuthManager.self) private var authmanager
     @Environment(\.dismiss) private var dismiss
     
     @State private var email = ""
@@ -19,7 +17,6 @@ struct ProfileCreationView: View {
     @State private var password = ""
     @State private var confirmedPassword = ""
     @State private var passwordsMatch = false
-    var onProfileCreated: () -> Void
     
     var body: some View {
         VStack(spacing: 8){
@@ -56,7 +53,9 @@ struct ProfileCreationView: View {
             }
             .padding(.horizontal, 24)
             .onChange(of: confirmedPassword){ oldValue, newValue in
-                passwordsMatch = newValue == password}
+                passwordsMatch = newValue == password
+            }
+        }
             
             ZStack(alignment: .trailing){
                 SecureField("Confirm your password", text: $password)
@@ -96,8 +95,18 @@ struct ProfileCreationView: View {
             .padding(.vertical,16)
         }
     }
+
+private extension ProfileCreationView {
+    func signUp() {
+        Task {
+            await authManager.signUp(
+                withEmail: email,
+                password: password
+            )
+        }
+    }
 }
 #Preview {
     ProfileCreationView()
 }
-  
+

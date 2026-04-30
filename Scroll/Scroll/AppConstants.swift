@@ -8,6 +8,6 @@
 import Foundation
 
 struct AppConstants {
-    static let projectURLString = ""
-    static let ProjectAPIKey = ""
+    static let projectURLString = "https://rmyzqiwdtmtpnvizbqwi.supabase.co"
+    static let ProjectAPIKey = "sb_publishable_LSYhdMx2KJXSyt5dXIAcJg_JfNW3OGi"
 }

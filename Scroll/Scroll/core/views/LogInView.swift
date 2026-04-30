@@ -5,12 +5,11 @@
 //  Created by Alejandro Birrueta on 4/15/26.
 //
 
-import Foundation
-import Storage
-import Supabase
 import SwiftUI
 
 struct LogInView: View {
+    @Environment(AuthManager.self) private var authmanager
+    
     @State var email = ""
     @State var password: String = ""
     
@@ -33,10 +32,9 @@ struct LogInView: View {
                     .background (Color(.systemGray6))
                     .cornerRadius(10)
                     .padding(.horizontal)
-                Spacer()
             }
             
-            Button { } label: {
+            Button { signIn() } label: {
                 Text( "Login")
                     .frame(width: 360, height: 48) .font(.headline)
                     .background(.blue)
@@ -67,7 +65,14 @@ struct LogInView: View {
         }
     }
 }
-    
+
+private extension LogInView {
+    func signIn() {
+        Task {
+            await authManager.login(withEmail: email, password: password)
+        }
+    }
+}
 
 #Preview {
     LogInView()

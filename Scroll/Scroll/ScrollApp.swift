@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ScrollApp: App {
+    @State private var authManager = AuthManager(service: SupabaseAuthService())
+    
     var body: some Scene {
         WindowGroup {
-            AppView()
+            ContentView()
+                .environment(authManager)
         }
     }
 }
