@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ProfileCreationView: View {
-    @Environment(AuthManager.self) private var authmanager
+    @Environment(AuthManager.self) private var authManager
     @Environment(\.dismiss) private var dismiss
     
     @State private var email = ""
@@ -44,11 +44,14 @@ struct ProfileCreationView: View {
                     .padding(12)
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
-                
+                    .textContentType(.oneTimeCode)
+
                 if !password.isEmpty && !confirmedPassword.isEmpty {
                     Image(systemName: passwordsMatch ? "checkmark.circle.fill" : "xmark.crircle.fill")
                         .foregroundStyle(passwordsMatch ? .green : .red)
                         .padding(.horizontal)
+                        .textContentType(.oneTimeCode)
+
                 }
             }
             .padding(.horizontal, 24)
@@ -70,7 +73,7 @@ struct ProfileCreationView: View {
                 }
             }
             
-            Button { } label: {
+            Button { signUp() } label: {
                 Text("Sign up")
                     .frame(width: 360, height: 48) .font(.headline)
                     .background(.blue)

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		817D7BB12FA7EF9300824924 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 817D7BB02FA7EF9300824924 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8134F54F2F4636B900C16F0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817D7BB12FA7EF9300824924 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,7 @@
 			);
 			name = Scroll;
 			packageProductDependencies = (
+				817D7BB02FA7EF9300824924 /* Supabase */,
 			);
 			productName = Scroll;
 			productReference = 8134F5412F4636B800C16F0E /* Scroll.app */;
@@ -204,6 +210,7 @@
 			mainGroup = 8134F5382F4636B700C16F0E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				817D7BAF2FA7EF5D00824924 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8134F5422F4636B800C16F0E /* Products */;
@@ -588,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		817D7BAF2FA7EF5D00824924 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		817D7BB02FA7EF9300824924 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 817D7BAF2FA7EF5D00824924 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8134F5392F4636B800C16F0E /* Project object */;
 }

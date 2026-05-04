@@ -18,13 +18,14 @@ struct SupabaseAuthService {
         )
     }
     
-    func login(withEmail email: String, password: String) async throws {
+    func login(withEmail email: String, password: String) async throws -> AuthenticationState {
         try await client.auth.signIn(email: email, password: password)
         return .authenticated
     }
 
-    func signUp(withEmail email: String, password: String) async throws {
+    func signUp(withEmail email: String, password: String) async throws -> AuthenticationState {
         try await client.auth.signUp(email: email, password: password)
+        return .authenticated
     }
     
     func signOut() async throws {

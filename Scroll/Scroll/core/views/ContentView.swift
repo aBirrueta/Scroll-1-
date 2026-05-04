@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         Group{
-            switch authManager.authstate {
+            switch authManager.authState {
             case .notDetermined:
                 ProgressView()
             case .notAuthenticated:
@@ -30,7 +30,7 @@ struct ContentView: View {
                 
             }
         }
-        .task { await auth}
+        .task { await authManager.getAuthState() }
     }
 }
  

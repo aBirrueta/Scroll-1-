@@ -69,7 +69,7 @@ struct LogInView: View {
 private extension LogInView {
     func signIn() {
         Task {
-            await authManager.login(withEmail: email, password: password)
+            await authmanager.login(withEmail: email, password: password)
         }
     }
 }
