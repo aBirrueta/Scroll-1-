@@ -7,42 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		817D7BB12FA7EF9300824924 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 817D7BB02FA7EF9300824924 /* Supabase */; };
-		81F731F82FAC448900D509A8 /* ScrollActivityReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 81F731EC2FAC448900D509A8 /* ScrollActivityReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		810A5E252FAD0584007B77E1 /* monitorExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 810A5E192FAD0583007B77E1 /* monitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8134F54F2F4636B900C16F0E /* PBXContainerItemProxy */ = {
+		810A5DF92FAD044E007B77E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8134F5392F4636B800C16F0E /* Project object */;
+			containerPortal = 810A5DE32FAD044D007B77E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8134F5402F4636B800C16F0E;
-			remoteInfo = Scroll;
+			remoteGlobalIDString = 810A5DEA2FAD044D007B77E1;
+			remoteInfo = Screentime;
 		};
-		8134F5592F4636B900C16F0E /* PBXContainerItemProxy */ = {
+		810A5E032FAD044E007B77E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8134F5392F4636B800C16F0E /* Project object */;
+			containerPortal = 810A5DE32FAD044D007B77E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8134F5402F4636B800C16F0E;
-			remoteInfo = Scroll;
+			remoteGlobalIDString = 810A5DEA2FAD044D007B77E1;
+			remoteInfo = Screentime;
 		};
-		81F731F62FAC448900D509A8 /* PBXContainerItemProxy */ = {
+		810A5E232FAD0584007B77E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8134F5392F4636B800C16F0E /* Project object */;
+			containerPortal = 810A5DE32FAD044D007B77E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 81F731EB2FAC448900D509A8;
-			remoteInfo = ScrollActivityReport;
+			remoteGlobalIDString = 810A5E182FAD0583007B77E1;
+			remoteInfo = monitorExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		81F731FD2FAC448900D509A8 /* Embed ExtensionKit Extensions */ = {
+		810A5E2A2FAD0584007B77E1 /* Embed ExtensionKit Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				81F731F82FAC448900D509A8 /* ScrollActivityReport.appex in Embed ExtensionKit Extensions */,
+				810A5E252FAD0584007B77E1 /* monitorExtension.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,72 +49,71 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8134F5412F4636B800C16F0E /* Scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8134F54E2F4636B900C16F0E /* ScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8134F5582F4636B900C16F0E /* ScrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81F731EC2FAC448900D509A8 /* ScrollActivityReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScrollActivityReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		810A5DEB2FAD044D007B77E1 /* Screentime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screentime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		810A5DF82FAD044E007B77E1 /* ScreentimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreentimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		810A5E022FAD044E007B77E1 /* ScreentimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreentimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		810A5E192FAD0583007B77E1 /* monitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = monitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		81F731F92FAC448900D509A8 /* Exceptions for "ScrollActivityReport" folder in "ScrollActivityReport" target */ = {
+		810A5E262FAD0584007B77E1 /* Exceptions for "monitorExtension" folder in "monitorExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 81F731EB2FAC448900D509A8 /* ScrollActivityReport */;
+			target = 810A5E182FAD0583007B77E1 /* monitorExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8134F5432F4636B800C16F0E /* Scroll */ = {
+		810A5DED2FAD044D007B77E1 /* Screentime */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Scroll;
+			path = Screentime;
 			sourceTree = "<group>";
 		};
-		8134F5512F4636B900C16F0E /* ScrollTests */ = {
+		810A5DFB2FAD044E007B77E1 /* ScreentimeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScrollTests;
+			path = ScreentimeTests;
 			sourceTree = "<group>";
 		};
-		8134F55B2F4636B900C16F0E /* ScrollUITests */ = {
+		810A5E052FAD044E007B77E1 /* ScreentimeUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ScrollUITests;
+			path = ScreentimeUITests;
 			sourceTree = "<group>";
 		};
-		81F731ED2FAC448900D509A8 /* ScrollActivityReport */ = {
+		810A5E1A2FAD0583007B77E1 /* monitorExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				81F731F92FAC448900D509A8 /* Exceptions for "ScrollActivityReport" folder in "ScrollActivityReport" target */,
+				810A5E262FAD0584007B77E1 /* Exceptions for "monitorExtension" folder in "monitorExtension" target */,
 			);
-			path = ScrollActivityReport;
+			path = monitorExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8134F53E2F4636B800C16F0E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				817D7BB12FA7EF9300824924 /* Supabase in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8134F54B2F4636B900C16F0E /* Frameworks */ = {
+		810A5DE82FAD044D007B77E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8134F5552F4636B900C16F0E /* Frameworks */ = {
+		810A5DF52FAD044E007B77E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81F731E92FAC448900D509A8 /* Frameworks */ = {
+		810A5DFF2FAD044E007B77E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810A5E162FAD0583007B77E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,206 +123,194 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8134F5382F4636B700C16F0E = {
+		810A5DE22FAD044D007B77E1 = {
 			isa = PBXGroup;
 			children = (
-				8134F5432F4636B800C16F0E /* Scroll */,
-				8134F5512F4636B900C16F0E /* ScrollTests */,
-				8134F55B2F4636B900C16F0E /* ScrollUITests */,
-				81F731ED2FAC448900D509A8 /* ScrollActivityReport */,
-				8169204C2FA30F830024CD62 /* Frameworks */,
-				8134F5422F4636B800C16F0E /* Products */,
+				810A5DED2FAD044D007B77E1 /* Screentime */,
+				810A5DFB2FAD044E007B77E1 /* ScreentimeTests */,
+				810A5E052FAD044E007B77E1 /* ScreentimeUITests */,
+				810A5E1A2FAD0583007B77E1 /* monitorExtension */,
+				810A5DEC2FAD044D007B77E1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8134F5422F4636B800C16F0E /* Products */ = {
+		810A5DEC2FAD044D007B77E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8134F5412F4636B800C16F0E /* Scroll.app */,
-				8134F54E2F4636B900C16F0E /* ScrollTests.xctest */,
-				8134F5582F4636B900C16F0E /* ScrollUITests.xctest */,
-				81F731EC2FAC448900D509A8 /* ScrollActivityReport.appex */,
+				810A5DEB2FAD044D007B77E1 /* Screentime.app */,
+				810A5DF82FAD044E007B77E1 /* ScreentimeTests.xctest */,
+				810A5E022FAD044E007B77E1 /* ScreentimeUITests.xctest */,
+				810A5E192FAD0583007B77E1 /* monitorExtension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8169204C2FA30F830024CD62 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8134F5402F4636B800C16F0E /* Scroll */ = {
+		810A5DEA2FAD044D007B77E1 /* Screentime */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8134F5622F4636B900C16F0E /* Build configuration list for PBXNativeTarget "Scroll" */;
+			buildConfigurationList = 810A5E0C2FAD044E007B77E1 /* Build configuration list for PBXNativeTarget "Screentime" */;
 			buildPhases = (
-				8134F53D2F4636B800C16F0E /* Sources */,
-				8134F53E2F4636B800C16F0E /* Frameworks */,
-				8134F53F2F4636B800C16F0E /* Resources */,
-				81F731FD2FAC448900D509A8 /* Embed ExtensionKit Extensions */,
+				810A5DE72FAD044D007B77E1 /* Sources */,
+				810A5DE82FAD044D007B77E1 /* Frameworks */,
+				810A5DE92FAD044D007B77E1 /* Resources */,
+				810A5E2A2FAD0584007B77E1 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81F731F72FAC448900D509A8 /* PBXTargetDependency */,
+				810A5E242FAD0584007B77E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8134F5432F4636B800C16F0E /* Scroll */,
+				810A5DED2FAD044D007B77E1 /* Screentime */,
 			);
-			name = Scroll;
+			name = Screentime;
 			packageProductDependencies = (
-				817D7BB02FA7EF9300824924 /* Supabase */,
 			);
-			productName = Scroll;
-			productReference = 8134F5412F4636B800C16F0E /* Scroll.app */;
+			productName = Screentime;
+			productReference = 810A5DEB2FAD044D007B77E1 /* Screentime.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8134F54D2F4636B900C16F0E /* ScrollTests */ = {
+		810A5DF72FAD044E007B77E1 /* ScreentimeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8134F5652F4636B900C16F0E /* Build configuration list for PBXNativeTarget "ScrollTests" */;
+			buildConfigurationList = 810A5E0F2FAD044E007B77E1 /* Build configuration list for PBXNativeTarget "ScreentimeTests" */;
 			buildPhases = (
-				8134F54A2F4636B900C16F0E /* Sources */,
-				8134F54B2F4636B900C16F0E /* Frameworks */,
-				8134F54C2F4636B900C16F0E /* Resources */,
+				810A5DF42FAD044E007B77E1 /* Sources */,
+				810A5DF52FAD044E007B77E1 /* Frameworks */,
+				810A5DF62FAD044E007B77E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8134F5502F4636B900C16F0E /* PBXTargetDependency */,
+				810A5DFA2FAD044E007B77E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8134F5512F4636B900C16F0E /* ScrollTests */,
+				810A5DFB2FAD044E007B77E1 /* ScreentimeTests */,
 			);
-			name = ScrollTests;
+			name = ScreentimeTests;
 			packageProductDependencies = (
 			);
-			productName = ScrollTests;
-			productReference = 8134F54E2F4636B900C16F0E /* ScrollTests.xctest */;
+			productName = ScreentimeTests;
+			productReference = 810A5DF82FAD044E007B77E1 /* ScreentimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8134F5572F4636B900C16F0E /* ScrollUITests */ = {
+		810A5E012FAD044E007B77E1 /* ScreentimeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8134F5682F4636B900C16F0E /* Build configuration list for PBXNativeTarget "ScrollUITests" */;
+			buildConfigurationList = 810A5E122FAD044E007B77E1 /* Build configuration list for PBXNativeTarget "ScreentimeUITests" */;
 			buildPhases = (
-				8134F5542F4636B900C16F0E /* Sources */,
-				8134F5552F4636B900C16F0E /* Frameworks */,
-				8134F5562F4636B900C16F0E /* Resources */,
+				810A5DFE2FAD044E007B77E1 /* Sources */,
+				810A5DFF2FAD044E007B77E1 /* Frameworks */,
+				810A5E002FAD044E007B77E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8134F55A2F4636B900C16F0E /* PBXTargetDependency */,
+				810A5E042FAD044E007B77E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				8134F55B2F4636B900C16F0E /* ScrollUITests */,
+				810A5E052FAD044E007B77E1 /* ScreentimeUITests */,
 			);
-			name = ScrollUITests;
+			name = ScreentimeUITests;
 			packageProductDependencies = (
 			);
-			productName = ScrollUITests;
-			productReference = 8134F5582F4636B900C16F0E /* ScrollUITests.xctest */;
+			productName = ScreentimeUITests;
+			productReference = 810A5E022FAD044E007B77E1 /* ScreentimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		81F731EB2FAC448900D509A8 /* ScrollActivityReport */ = {
+		810A5E182FAD0583007B77E1 /* monitorExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81F731FA2FAC448900D509A8 /* Build configuration list for PBXNativeTarget "ScrollActivityReport" */;
+			buildConfigurationList = 810A5E272FAD0584007B77E1 /* Build configuration list for PBXNativeTarget "monitorExtension" */;
 			buildPhases = (
-				81F731E82FAC448900D509A8 /* Sources */,
-				81F731E92FAC448900D509A8 /* Frameworks */,
-				81F731EA2FAC448900D509A8 /* Resources */,
+				810A5E152FAD0583007B77E1 /* Sources */,
+				810A5E162FAD0583007B77E1 /* Frameworks */,
+				810A5E172FAD0583007B77E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				81F731ED2FAC448900D509A8 /* ScrollActivityReport */,
+				810A5E1A2FAD0583007B77E1 /* monitorExtension */,
 			);
-			name = ScrollActivityReport;
+			name = monitorExtension;
 			packageProductDependencies = (
 			);
-			productName = ScrollActivityReport;
-			productReference = 81F731EC2FAC448900D509A8 /* ScrollActivityReport.appex */;
+			productName = monitorExtension;
+			productReference = 810A5E192FAD0583007B77E1 /* monitorExtension.appex */;
 			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8134F5392F4636B800C16F0E /* Project object */ = {
+		810A5DE32FAD044D007B77E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					8134F5402F4636B800C16F0E = {
+					810A5DEA2FAD044D007B77E1 = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					8134F54D2F4636B900C16F0E = {
+					810A5DF72FAD044E007B77E1 = {
 						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 8134F5402F4636B800C16F0E;
+						TestTargetID = 810A5DEA2FAD044D007B77E1;
 					};
-					8134F5572F4636B900C16F0E = {
+					810A5E012FAD044E007B77E1 = {
 						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 8134F5402F4636B800C16F0E;
+						TestTargetID = 810A5DEA2FAD044D007B77E1;
 					};
-					81F731EB2FAC448900D509A8 = {
+					810A5E182FAD0583007B77E1 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 8134F53C2F4636B800C16F0E /* Build configuration list for PBXProject "Scroll" */;
+			buildConfigurationList = 810A5DE62FAD044D007B77E1 /* Build configuration list for PBXProject "Screentime" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 8134F5382F4636B700C16F0E;
+			mainGroup = 810A5DE22FAD044D007B77E1;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				817D7BAF2FA7EF5D00824924 /* XCRemoteSwiftPackageReference "supabase-swift" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 8134F5422F4636B800C16F0E /* Products */;
+			productRefGroup = 810A5DEC2FAD044D007B77E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8134F5402F4636B800C16F0E /* Scroll */,
-				8134F54D2F4636B900C16F0E /* ScrollTests */,
-				8134F5572F4636B900C16F0E /* ScrollUITests */,
-				81F731EB2FAC448900D509A8 /* ScrollActivityReport */,
+				810A5DEA2FAD044D007B77E1 /* Screentime */,
+				810A5DF72FAD044E007B77E1 /* ScreentimeTests */,
+				810A5E012FAD044E007B77E1 /* ScreentimeUITests */,
+				810A5E182FAD0583007B77E1 /* monitorExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8134F53F2F4636B800C16F0E /* Resources */ = {
+		810A5DE92FAD044D007B77E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8134F54C2F4636B900C16F0E /* Resources */ = {
+		810A5DF62FAD044E007B77E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8134F5562F4636B900C16F0E /* Resources */ = {
+		810A5E002FAD044E007B77E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81F731EA2FAC448900D509A8 /* Resources */ = {
+		810A5E172FAD0583007B77E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -334,28 +320,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8134F53D2F4636B800C16F0E /* Sources */ = {
+		810A5DE72FAD044D007B77E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8134F54A2F4636B900C16F0E /* Sources */ = {
+		810A5DF42FAD044E007B77E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8134F5542F4636B900C16F0E /* Sources */ = {
+		810A5DFE2FAD044E007B77E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81F731E82FAC448900D509A8 /* Sources */ = {
+		810A5E152FAD0583007B77E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,25 +351,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8134F5502F4636B900C16F0E /* PBXTargetDependency */ = {
+		810A5DFA2FAD044E007B77E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8134F5402F4636B800C16F0E /* Scroll */;
-			targetProxy = 8134F54F2F4636B900C16F0E /* PBXContainerItemProxy */;
+			target = 810A5DEA2FAD044D007B77E1 /* Screentime */;
+			targetProxy = 810A5DF92FAD044E007B77E1 /* PBXContainerItemProxy */;
 		};
-		8134F55A2F4636B900C16F0E /* PBXTargetDependency */ = {
+		810A5E042FAD044E007B77E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8134F5402F4636B800C16F0E /* Scroll */;
-			targetProxy = 8134F5592F4636B900C16F0E /* PBXContainerItemProxy */;
+			target = 810A5DEA2FAD044D007B77E1 /* Screentime */;
+			targetProxy = 810A5E032FAD044E007B77E1 /* PBXContainerItemProxy */;
 		};
-		81F731F72FAC448900D509A8 /* PBXTargetDependency */ = {
+		810A5E242FAD0584007B77E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 81F731EB2FAC448900D509A8 /* ScrollActivityReport */;
-			targetProxy = 81F731F62FAC448900D509A8 /* PBXContainerItemProxy */;
+			target = 810A5E182FAD0583007B77E1 /* monitorExtension */;
+			targetProxy = 810A5E232FAD0584007B77E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		8134F5602F4636B900C16F0E /* Debug */ = {
+		810A5E0A2FAD044E007B77E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -447,7 +433,7 @@
 			};
 			name = Debug;
 		};
-		8134F5612F4636B900C16F0E /* Release */ = {
+		810A5E0B2FAD044E007B77E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -504,7 +490,7 @@
 			};
 			name = Release;
 		};
-		8134F5632F4636B900C16F0E /* Debug */ = {
+		810A5E0D2FAD044E007B77E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -524,7 +510,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.Scroll;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.Screentime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -536,7 +522,7 @@
 			};
 			name = Debug;
 		};
-		8134F5642F4636B900C16F0E /* Release */ = {
+		810A5E0E2FAD044E007B77E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -556,7 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.Scroll;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.Screentime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -568,7 +554,7 @@
 			};
 			name = Release;
 		};
-		8134F5662F4636B900C16F0E /* Debug */ = {
+		810A5E102FAD044E007B77E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -578,7 +564,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.ScrollTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.ScreentimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -586,11 +572,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scroll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scroll";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Screentime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Screentime";
 			};
 			name = Debug;
 		};
-		8134F5672F4636B900C16F0E /* Release */ = {
+		810A5E112FAD044E007B77E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,7 +586,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.ScrollTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.ScreentimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -608,11 +594,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scroll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scroll";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Screentime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Screentime";
 			};
 			name = Release;
 		};
-		8134F5692F4636B900C16F0E /* Debug */ = {
+		810A5E132FAD044E007B77E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -620,7 +606,7 @@
 				DEVELOPMENT_TEAM = 785XN3X32B;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.ScrollUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.ScreentimeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -628,11 +614,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Scroll;
+				TEST_TARGET_NAME = Screentime;
 			};
 			name = Debug;
 		};
-		8134F56A2F4636B900C16F0E /* Release */ = {
+		810A5E142FAD044E007B77E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -640,7 +626,7 @@
 				DEVELOPMENT_TEAM = 785XN3X32B;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.ScrollUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.ScreentimeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -648,20 +634,20 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Scroll;
+				TEST_TARGET_NAME = Screentime;
 			};
 			name = Release;
 		};
-		81F731FB2FAC448900D509A8 /* Debug */ = {
+		810A5E282FAD0584007B77E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ScrollActivityReport/ScrollActivityReport.entitlements;
+				CODE_SIGN_ENTITLEMENTS = monitorExtension/monitorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 785XN3X32B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScrollActivityReport/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScrollActivityReport;
+				INFOPLIST_FILE = monitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = monitorExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,7 +655,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.Scroll.ScrollActivityReport;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.Screentime.monitorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -681,16 +667,16 @@
 			};
 			name = Debug;
 		};
-		81F731FC2FAC448900D509A8 /* Release */ = {
+		810A5E292FAD0584007B77E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ScrollActivityReport/ScrollActivityReport.entitlements;
+				CODE_SIGN_ENTITLEMENTS = monitorExtension/monitorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 785XN3X32B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ScrollActivityReport/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ScrollActivityReport;
+				INFOPLIST_FILE = monitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = monitorExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -698,7 +684,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Time.Scroll.ScrollActivityReport;
+				PRODUCT_BUNDLE_IDENTIFIER = Time.Screentime.monitorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -713,71 +699,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8134F53C2F4636B800C16F0E /* Build configuration list for PBXProject "Scroll" */ = {
+		810A5DE62FAD044D007B77E1 /* Build configuration list for PBXProject "Screentime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8134F5602F4636B900C16F0E /* Debug */,
-				8134F5612F4636B900C16F0E /* Release */,
+				810A5E0A2FAD044E007B77E1 /* Debug */,
+				810A5E0B2FAD044E007B77E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8134F5622F4636B900C16F0E /* Build configuration list for PBXNativeTarget "Scroll" */ = {
+		810A5E0C2FAD044E007B77E1 /* Build configuration list for PBXNativeTarget "Screentime" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8134F5632F4636B900C16F0E /* Debug */,
-				8134F5642F4636B900C16F0E /* Release */,
+				810A5E0D2FAD044E007B77E1 /* Debug */,
+				810A5E0E2FAD044E007B77E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8134F5652F4636B900C16F0E /* Build configuration list for PBXNativeTarget "ScrollTests" */ = {
+		810A5E0F2FAD044E007B77E1 /* Build configuration list for PBXNativeTarget "ScreentimeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8134F5662F4636B900C16F0E /* Debug */,
-				8134F5672F4636B900C16F0E /* Release */,
+				810A5E102FAD044E007B77E1 /* Debug */,
+				810A5E112FAD044E007B77E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8134F5682F4636B900C16F0E /* Build configuration list for PBXNativeTarget "ScrollUITests" */ = {
+		810A5E122FAD044E007B77E1 /* Build configuration list for PBXNativeTarget "ScreentimeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8134F5692F4636B900C16F0E /* Debug */,
-				8134F56A2F4636B900C16F0E /* Release */,
+				810A5E132FAD044E007B77E1 /* Debug */,
+				810A5E142FAD044E007B77E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81F731FA2FAC448900D509A8 /* Build configuration list for PBXNativeTarget "ScrollActivityReport" */ = {
+		810A5E272FAD0584007B77E1 /* Build configuration list for PBXNativeTarget "monitorExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81F731FB2FAC448900D509A8 /* Debug */,
-				81F731FC2FAC448900D509A8 /* Release */,
+				810A5E282FAD0584007B77E1 /* Debug */,
+				810A5E292FAD0584007B77E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		817D7BAF2FA7EF5D00824924 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/supabase/supabase-swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.5.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		817D7BB02FA7EF9300824924 /* Supabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 817D7BAF2FA7EF5D00824924 /* XCRemoteSwiftPackageReference "supabase-swift" */;
-			productName = Supabase;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 8134F5392F4636B800C16F0E /* Project object */;
+	rootObject = 810A5DE32FAD044D007B77E1 /* Project object */;
 }
