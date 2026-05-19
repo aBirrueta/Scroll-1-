@@ -55,3 +55,5 @@ struct TotalActivityView: View {
     return totalSeconds
   }
 }
+    TotalActivityView()
+}
